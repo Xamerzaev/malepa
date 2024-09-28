@@ -11,9 +11,9 @@ import video_processors.urls
 
 schema_view = get_schema_view(
     openapi.Info(
-        title="MalepaAPI",
+        title="aicmarkAPI",
         default_version='v1',
-        description="Начальная API проекта Malepa.",
+        description="Начальная API проекта aicmark.",
         terms_of_service="https://www.google.com/policies/terms/",
         license=openapi.License(name="BSD License"),
     ),

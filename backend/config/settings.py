@@ -3,15 +3,15 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = os.environ.get('SECRET_KEY', 'pichendc3u8747yf9430sf999___004')
+SECRET_KEY = os.environ.get('SECRET_KEY', 'aicmarkdc3u8747yf9430sf999___004')
 
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'malepa.com',
-    'www.malepa.com',
-    'malepa.ru',
-    'www.malepa.ru',
+    'aicmark.com',
+    'www.aicmark.com',
+    'aicmark.ru',
+    'www.aicmark.ru',
     'localhost',
     '127.0.0.1',
 ]
@@ -122,6 +122,6 @@ MEDIA_URL = '/media/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CSRF_TRUSTED_ORIGINS = [
-    'https://malepa.com',
-    'https://www.malepa.com',
+    'https://aicmark.com',
+    'https://www.aicmark.com',
 ]
