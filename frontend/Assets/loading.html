@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Assets/fonts/Golos/stylesheet.css">
+    <link rel="stylesheet" href="../css/loading.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Assets/img/Icons/favicon.svg" type="image/x-icon">
+    <title>Разметить видео</title>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <div class="container">
+                <div class="content">
+                    <div class="header__position">
+                        <div class="logo">
+                            <img src="img/logo.png" alt="img/logo.png">
+                        </div>
+    
+                        <div class="account">
+                            <img src="img/Icons/Notification.svg" alt="Notification">
+                            <img src="img/Icons/Ellipse 1.svg" alt="Ellipse 1" style="margin-left: 25px;">
+                            <div class="id">
+                                <p id="killMargin" class="name">Jessie Volker</p>
+                                <p class="idname">ID: 11222343086</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+       <main>
+        <aside>
+            <div class="ui__menu">
+                <div class="profile">
+                    <img src="img/Icons/user.svg" alt="user">
+                    <a href="#">Профиль</a>
+                </div>
+                <div class="profile">
+                    <img src="img/Icons/brush-square.svg" alt="user">
+                    <a href="#">Разметить видео</a>
+                </div>
+                <div class="profile">
+                    <img src="img/Icons/Vector.svg" alt="user">
+                    <a href="#">В процессе</a>
+                </div>
+                <div class="profile">
+                    <img src="img/Icons/edit.svg" alt="user">
+                    <a href="#">Редактировать</a>
+                </div>
+                <div class="profile">
+                    <img src="img/Icons/video.svg" alt="user">
+                    <a href="#">Мои видео</a>
+                </div>
+            </div>
+        </aside>
+        <section>
+            <div class="loader-container">
+                <div class="loader-circle">
+                  <div class="loader-progress"></div>
+                  <div class="loader-logo"></div>
+                  <div class="loader-percentage" id="percentage">0%</div>
+                  <p class="loading__text">Идёт загрузка...</p>
+                  <p class="loading__text2">Пожалуйста, подождите...</p>
+                </div>
+              </div>
+        </section>
+       </main>
+    </div>
+
+    <script>
+let percentage = 0;
+        const percentageText = document.getElementById('percentage');
+        
+        const interval = setInterval(() => {
+          percentage++;
+          percentageText.innerText = percentage + '%';
+    
+          if (percentage >= 100) {
+            clearInterval(interval);
+            window.location.href = "file:///C:/Users/zelim/GitHub/Aicmark/Assets/videoEditing.html"; // Замените на ссылку на нужную страницу
+          }
+        }, 50); // 50ms для плавного увеличения процента
+      </script>
+
+</body>
+</html>

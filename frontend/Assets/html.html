@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Assets/fonts/Golos/stylesheet.css">
+    <link rel="stylesheet" href="../css/css.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Assets/img/Icons/favicon.svg" type="image/x-icon">
+    <title>разметка</title>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <div class="container">
+                <div class="content">
+                    <div class="header__position">
+                        <div class="logo">
+                            <img src="img/logo.png" alt="img/logo.png">
+                        </div>
+    
+                        <div class="buttons">
+                            <a class="back" href="videoEditing.html">Назад</a>
+                            <a class="ready" href="#">Экспорт</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+       <main>
+        <aside>
+            <img src="img/Side menu2.png" alt="">
+        </aside>
+        <section>
+            <div class="png">
+                <img src="img/Frame 427320879.svg" alt="">
+            </div>
+            <div class="razmetka">
+                <div class="razmetka__links">
+                    <a class="html__l active" href="#">HTML</a>
+                    <a class="json__l" href="#">JSON</a>
+                </div>
+            </div>
+
+            <div class="content__2 show">
+                <img src="img/Frame 427320878.svg" alt="">
+            </div>
+            
+            <div class="content__2">
+                <img src="img/123.svg" alt="">
+            </div>
+            
+        </section>
+       </main>
+    </div>
+
+    <script>
+         const htmlLink = document.querySelector('.html__l');
+        const jsonLink = document.querySelector('.json__l');
+        const htmlContent = document.querySelectorAll('.content__2')[0];
+        const jsonContent = document.querySelectorAll('.content__2')[1];
+        
+        htmlLink.addEventListener('click', () => {
+            htmlLink.classList.add('active');
+            jsonLink.classList.remove('active');
+            htmlContent.classList.add('show');
+            jsonContent.classList.remove('show');
+        });
+        
+        jsonLink.addEventListener('click', () => {
+            jsonLink.classList.add('active');
+            htmlLink.classList.remove('active');
+            jsonContent.classList.add('show');
+            htmlContent.classList.remove('show');
+        });
+    </script>
+</body>
+</html>
